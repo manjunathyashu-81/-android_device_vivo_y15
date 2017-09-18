@@ -34,4 +34,7 @@
  cd wpa_supplicant_8
  patch -p1 < ../../device/huawei/holly/patches/wpa_supplicant_8.patch
  cd ../..
+ cd packages/apps/FMRadio
+ patch -p1 < ../../../device/huawei/holly/patches/packages_apps_FMRadio.patch
+ cd ../../..
  echo Successfuly patched! Go ahead and start building!
