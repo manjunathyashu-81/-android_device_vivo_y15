@@ -230,4 +230,7 @@ PRODUCT_COPY_FILES_OVERRIDES += \
     recovery/root/ueventd.goldfish.rc \
     recovery/root/ueventd.ranchu.rc
 
+# FASTER BOOTANIMATION
+TARGET_BOOTANIMATION_HALF_RES := true
+
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
