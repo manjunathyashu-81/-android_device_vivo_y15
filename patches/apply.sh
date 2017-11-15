@@ -37,4 +37,7 @@
  cd packages/apps/FMRadio
  patch -p1 < ../../../device/huawei/holly/patches/packages_apps_FMRadio.patch
  cd ../../..
+ cd vendor/codeaurora/telephony
+ patch -p1 -p1 < ../../../device/huawei/holly/patches/vendor_codeaurora_telephony.patch
+ cd ../../..
  echo Successfuly patched! Go ahead and start building!
