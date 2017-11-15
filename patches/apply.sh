@@ -40,4 +40,6 @@
  cd vendor/codeaurora/telephony
  patch -p1 -p1 < ../../../device/huawei/holly/patches/vendor_codeaurora_telephony.patch
  cd ../../..
+ cd packages/services/Telephony
+ patch -p1 -p1 < ../../../device/huawei/holly/patches/packages_services_Telephony.patch
  echo Successfuly patched! Go ahead and start building!
