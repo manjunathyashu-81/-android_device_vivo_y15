@@ -4,16 +4,8 @@ import /init.modem.rc
 
 on early-init
     mount debugfs /sys/kernel/debug /sys/kernel/debug
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
     setprop ro.mtk.hardware mt6582
-
-on charger
-    mount ext4 /emmc@android /system ro wait
-    start drvbd
-    start ipod
-    start servicemanager
-
-    # disable USB
-    write /sys/devices/platform/mt_usb/cmode 0
 
 on init
     export LD_PRELOAD "/system/lib/libxlog.so /system/lib/libmt6582.so"
@@ -960,7 +952,7 @@ service thermal_manager /system/bin/thermal_manager
     user root
     oneshot
 
-service battery_charger /charger
+service charger /sbin/healthd -c
     class charger
     critical
     seclabel u:r:healthd:s0
