@@ -18,6 +18,7 @@
  cd ../..
  cd frameworks/av
  patch -p1 < ../../device/huawei/holly/patches/frameworks_av.patch
+ patch -p1 < ../../device/huawei/holly/patches/frameworks_av_2.patch
  cd ..
  cd base
  patch -p1 < ../../device/huawei/holly/patches/frameworks_base.patch
