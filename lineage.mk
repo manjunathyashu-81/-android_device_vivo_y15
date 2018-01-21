@@ -17,19 +17,19 @@
 # Specify phone tech before including full_phone
 
 # Release name
-PRODUCT_RELEASE_NAME := vivo
+PRODUCT_RELEASE_NAME := VIVO
 
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/vivo/y15/device.mk)
+$(call inherit-product, device/VIVO/Y15/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := y15
-PRODUCT_NAME := lineage_y15
-PRODUCT_BRAND := vivo
-PRODUCT_MODEL := y15
-PRODUCT_MANUFACTURER := vivo
+PRODUCT_DEVICE := Y15
+PRODUCT_NAME := lineage_Y15
+PRODUCT_BRAND := VIVO
+PRODUCT_MODEL := Y15
+PRODUCT_MANUFACTURER := VIVO
 
-PRODUCT_GMS_CLIENTID_BASE := android-vivo
+PRODUCT_GMS_CLIENTID_BASE := android-VIVO
