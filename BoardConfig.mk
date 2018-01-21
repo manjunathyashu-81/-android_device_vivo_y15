@@ -15,9 +15,9 @@
 #
 
 # inherit from the proprietary version
--include vendor/huawei/holly/BoardConfigVendor.mk
+-include vendor/VIVO/Y15/BoardConfigVendor.mk
 
-LOCAL_PATH := device/huawei/holly
+LOCAL_PATH := device/VIVO/Y15
 
 # Board
 TARGET_BOARD_PLATFORM := mt6582
@@ -41,13 +41,13 @@ DONT_DEXPREOPT_PREBUILTS := true
 TARGET_LDPRELOAD := libxlog.so:libmtk_symbols.so
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := HWHol-U
+TARGET_BOOTLOADER_BOARD_NAME := Y15
 
 TARGET_USERIMAGES_USE_EXT4:=true
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := false
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := HWHol-U
+TARGET_OTA_ASSERT_DEVICE := Y15
 
 # MTK HARDWARE
 OLD_KERNEL := true
