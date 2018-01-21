@@ -27,9 +27,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product, vendor/huawei/holly/holly-vendor.mk)
+$(call inherit-product, vendor/VIVO/Y15/Y15-vendor.mk)
 
-LOCAL_PATH := device/huawei/holly
+LOCAL_PATH := device/VIVO/Y15
 
 PRODUCT_CHARACTERISTICS := default
 
@@ -186,8 +186,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.media.use-awesome=true
 
-PRODUCT_NAME := full_holly
-PRODUCT_DEVICE := holly
+PRODUCT_NAME := full_Y15
+PRODUCT_DEVICE := Y15
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
